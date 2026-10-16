@@ -16,4 +16,5 @@ fun FormDataDiri(modifier : Modifier) {
 
     //VARIANEL- VARIABEL UNTUK MENYIMOAN DATA YANG DIPEROLEH DARI KOMPONEN UI
     var nama by remember {mutableStateOf("")}
+    var alamat by remember {mutableStateOf("")}
 }
