@@ -1,10 +1,12 @@
 package com.example.praktikum_5
 
+import androidx.compose.animation.expandHorizontally
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -67,6 +69,13 @@ fun FormDataDiri(modifier : Modifier) {
                 textAlamat = it
             }
         )
-
+        HorizontalDivider(
+            modifier = Modifier.padding(
+                bottom =
+                    dimensionResource(id = R.dimen.padding_medium),
+                    top = dimensionResource(
+                        id = R.dimen.padding_medium)
+            )
+        )
     }
 }
