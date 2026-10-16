@@ -57,5 +57,15 @@ fun FormDataDiri(modifier : Modifier) {
                 }
             }
         }
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier.padding(250.dp),
+            label = {Text(text = "Alamat")},
+            onValueChange = {
+                textAlamat = it
+            }
+        )
+
     }
 }
